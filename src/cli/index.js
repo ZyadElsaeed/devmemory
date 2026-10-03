@@ -3,6 +3,7 @@
 import { readFileSync } from 'node:fs';
 import { Command } from 'commander';
 import { initCommand } from './commands/init.js';
+import { addCommand } from './commands/add.js';
 
 const pkg = JSON.parse(
   readFileSync(new URL('../../package.json', import.meta.url), 'utf8')
@@ -23,7 +24,8 @@ program
 program
   .command('add')
   .description('Add a new memory')
-  .action(() => console.log('add: not implemented yet'));
+  .arguments('<text>')
+  .action(addCommand);
 
 program
   .command('list')
