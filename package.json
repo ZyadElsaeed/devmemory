@@ -1,0 +1,35 @@
+{
+  "name": "devmemory",
+  "version": "0.1.0",
+  "description": "Project memory for developers: record decisions and context, then search them later.",
+  "type": "module",
+  "bin": {
+    "devmemory": "./src/cli/index.js"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "developer-tools",
+    "memory",
+    "notes",
+    "git"
+  ],
+  "author": "Zyad Elsaeed",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZyadElsaeed/devmemory.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ZyadElsaeed/devmemory/issues"
+  },
+  "homepage": "https://github.com/ZyadElsaeed/devmemory#readme",
+  "dependencies": {
+    "commander": "^15.0.0"
+  }
+}
