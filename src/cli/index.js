@@ -2,6 +2,7 @@
 
 import { readFileSync } from 'node:fs';
 import { Command } from 'commander';
+import { initCommand } from './commands/init.js';
 
 const pkg = JSON.parse(
   readFileSync(new URL('../../package.json', import.meta.url), 'utf8')
@@ -17,7 +18,7 @@ program
 program
   .command('init')
   .description('Initialize DevMemory in the current project')
-  .action(() => console.log('init: not implemented yet'));
+  .action(initCommand);
 
 program
   .command('add')
